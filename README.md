@@ -1,6 +1,6 @@
 # Preprocessing of ECG signals
 
-Package to preprocess defibrilator measurements. Adapted from [corpuls](https://corpuls.world/) preprocessing methodology to preprocess ECG signals.
+Package to preprocess ECG signals. Adapted from [corpuls](https://corpuls.world/) preprocessing methodology.
 
 ## Build package
 
@@ -12,7 +12,7 @@ pip install build
 ```
 and build the package with `python -m build`. The results of the build process are within the folder /dist. You can install this local package with pip:
 ```console
-pip install /path/to/defibrillator_preprocessing-X.X.X-py3-none-any.whl
+pip install /path/to/repository/dist/defibrillator_preprocessing-X.X.X-py3-none-any.whl
 ```
 
 ## Use it
