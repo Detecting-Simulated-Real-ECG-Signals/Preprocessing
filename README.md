@@ -1,6 +1,6 @@
 # Preprocessing of ECG signals
 
-Package to preprocess ECG signals. Adapted from [corpuls](https://corpuls.world/) preprocessing methodology.
+Package to preprocess ECG signals. Preprocessing contains various filters and scaling methods.
 
 ## Build package
 
@@ -17,8 +17,8 @@ pip install /path/to/repository/dist/defibrillator_preprocessing-X.X.X-py3-none-
 
 ## Use it
 
-data_cleaning contains methods to remove baseline wandering by a simple highpass filter (`def butterworth_filtering`), baseline and offset wandering by a polynomial fitter manner (`def polynomial_remove_offset_and_baseline_wandering`) and a method to remove mains noise (`def remove_mains_noise`)
+The module `data_cleaning` contains methods to remove baseline wandering by a simple high-pass filter (`def butterworth_filtering`), baseline and offset wandering by a polynomial fitter manner (`def polynomial_remove_offset_and_baseline_wandering`) and a method to remove mains noise (`def remove_mains_noise`)
 
-preprocessing combines the data_cleaning methods into a single function. You have to define which filters and filter parameters you want to use. 
+The module `Preprocessing` combines the `data_cleaning` methods into a single function. You have to define which filters and filter parameters you want to use. 
 
-signal_scaling can be used to scale the mission recordings by percentile, max and threshold. 
+`signal_scaling` can be used to scale the mission recordings by percentile, max and threshold. 

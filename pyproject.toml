@@ -1,0 +1,24 @@
+[project]
+name = "defibrillator-preprocessing"
+version = "0.0.1"
+authors = [
+  { name="Markus Brücklmayr", email="markus@bruecklmayr.de" },
+]
+description = "Package to preprocess time series recorded by a defibrillator."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    'scipy>=1.11.3',
+    'numpy',
+    'tqdm',
+    'PyYAML'
+]
+
+[project.urls]
+Homepage = "https://github.com/Detecting-Simulated-Real-ECG-Signals/Preprocessing"
